@@ -116,6 +116,8 @@
       display: flex;
       flex-direction: column;
       position: relative;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12), 0 6px 20px rgba(0, 0, 0, 0.08);
+      transition: box-shadow 0.3s ease;
     }
 
     .card-icon {
@@ -133,6 +135,10 @@
       object-fit: contain;
       border-radius: 4px;
       opacity: 0.9;
+    }
+
+    .card:hover .card-image {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 10px 30px rgba(0, 0, 0, 0.1);
     }
 
     .card:hover .card-icon {
